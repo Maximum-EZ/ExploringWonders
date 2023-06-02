@@ -4,8 +4,35 @@
     <title>Exploring Wonders</title>
     <meta name="description" content="Welcome to Exploring Wonders, where we take you on an extraordinary journey to discover the world's most fascinating places. From ancient wonders to modern marvels, our articles provide captivating insights, breathtaking photographs, and intriguing stories that will ignite your sense of adventure. Join us as we explore the hidden gems, iconic landmarks, and natural wonders that make our planet truly remarkable.">
     <link rel="stylesheet" type="text/css" href="index.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8732115884229930"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8732115884229930" crossorigin="anonymous"></script>
+    <style>
+        .cookie-notice {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f7f7f7;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .cookie-notice .cookie-notice-text {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .cookie-notice .cookie-notice-button {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .cookie-notice .cookie-notice-button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -77,6 +104,18 @@
     </main>
     <footer>
         <p>&copy; 2023 Exploring Wonders. All rights reserved.</p>
+        <a href="/privacy.html">Privacy Policy</a>
     </footer>
+    <div class="cookie-notice">
+        <span class="cookie-notice-text">This website uses cookies to ensure you get the best experience.</span>
+        <button class="cookie-notice-button" onclick="acceptCookies()">Accept</button>
+    </div>
+    <script>
+        function acceptCookies() {
+            // Add code here to set a cookie and hide the cookie notice
+            var cookieNotice = document.querySelector('.cookie-notice');
+            cookieNotice.style.display = 'none';
+        }
+    </script>
 </body>
 </html>
