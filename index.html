@@ -32,9 +32,6 @@
         .cookie-notice .cookie-notice-button:hover {
             background-color: #45a049;
         }
-        .cookie-notice.hide {
-            display: none;
-        }
     </style>
 </head>
 <body>
@@ -109,48 +106,16 @@
         <p>&copy; 2023 Exploring Wonders. All rights reserved.</p>
         <a href="/privacy.html">Privacy Policy</a>
     </footer>
-    <script>
-        // Function to set the cookie when accepting the notice
-        function setCookie(cname, cvalue, exdays) {
-            var d = new Date();
-            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-            var expires = "expires=" + d.toUTCString();
-            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-        }
-
-        // Function to get the cookie value
-        function getCookie(cname) {
-            var name = cname + "=";
-            var ca = document.cookie.split(';');
-            for (var i = 0; i < ca.length; i++) {
-                var c = ca[i];
-                while (c.charAt(0) == ' ') {
-                    c = c.substring(1);
-                }
-                if (c.indexOf(name) == 0) {
-                    return c.substring(name.length, c.length);
-                }
-            }
-            return "";
-        }
-
-        // Check if the cookie is already set
-        var cookieNotice = document.querySelector('.cookie-notice');
-        var privacyAccepted = getCookie('privacy_accepted');
-
-        if (privacyAccepted) {
-            cookieNotice.classList.add('hide');
-        }
-
-        // Function to handle accepting the cookies
-        function acceptCookies() {
-            setCookie('privacy_accepted', 'true', 365); // Set the cookie for 365 days
-            cookieNotice.classList.add('hide');
-        }
-    </script>
     <div class="cookie-notice">
         <span class="cookie-notice-text">This website uses cookies to ensure you get the best experience.</span>
         <button class="cookie-notice-button" onclick="acceptCookies()">Accept</button>
     </div>
+    <script>
+        function acceptCookies() {
+            // Add code here to set a cookie and hide the cookie notice
+            var cookieNotice = document.querySelector('.cookie-notice');
+            cookieNotice.style.display = 'none';
+        }
+    </script>
 </body>
 </html>
