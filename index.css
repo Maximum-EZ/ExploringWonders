@@ -55,6 +55,18 @@ h2 {
     text-decoration: underline;
 }
 
+.policy {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.policy:hover {
+    text-decoration: underline;
+}
+
 footer {
     background-color: #333;
     color: #fff;
