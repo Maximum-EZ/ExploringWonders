@@ -1,2 +1,0 @@
-# ExploringWonders
-A blog
