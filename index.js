@@ -10,7 +10,7 @@ const routes = [
   { path: "/iceland", file: "/articles/iceland.html" },
   { path: "/serengeti", file: "/articles/serengeti.html" },
   { path: "/angkor", file: "/articles/angkor.html" },
-  { path: "/tokyo", file: "/articles/tokyo.html" },
+  { path: "/privacy", file: "/privacy.html" },
   { path: "/404", file: "404.html" },
 ];
 
