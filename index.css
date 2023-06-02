@@ -61,3 +61,23 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.go-back {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+ }
+
+    .go-back:hover {
+    background-color: #555;
+ }
