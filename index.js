@@ -1,9 +1,8 @@
 // Define routes
 const routes = [
   { path: "/", file: "index.html" },
-  { path: "/nutrition", file: "nutrition.html" },
-  { path: "/ancient", file: "ancient.html" },
-  { path: "/go", file: "go.html" },
+  { path: "/nutrition", file: "/articles/nutrition.html" },
+  { path: "/ancient", file: "/articles/ancient.html" },
   { path: "/404", file: "404.html" },
 ];
 
