@@ -33,8 +33,6 @@ main {
 article {
     border: 1px solid #ddd;
     padding: 20px;
-    display: flex;
-    flex-direction: column;  /* Added this line */
 }
 
 h2 {
@@ -78,8 +76,8 @@ footer {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-}
+ }
 
-.go-back:hover {
+    .go-back:hover {
     background-color: #555;
-}
+ }
