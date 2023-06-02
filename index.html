@@ -32,6 +32,9 @@
         .cookie-notice .cookie-notice-button:hover {
             background-color: #45a049;
         }
+        .cookie-notice.hide {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -118,8 +121,7 @@
         // Function to get the cookie value
         function getCookie(cname) {
             var name = cname + "=";
-            var decodedCookie = decodeURIComponent(document.cookie);
-            var ca = decodedCookie.split(';');
+            var ca = document.cookie.split(';');
             for (var i = 0; i < ca.length; i++) {
                 var c = ca[i];
                 while (c.charAt(0) == ' ') {
@@ -137,13 +139,13 @@
         var privacyAccepted = getCookie('privacy_accepted');
 
         if (privacyAccepted) {
-            cookieNotice.style.display = 'none';
+            cookieNotice.classList.add('hide');
         }
 
         // Function to handle accepting the cookies
         function acceptCookies() {
             setCookie('privacy_accepted', 'true', 365); // Set the cookie for 365 days
-            cookieNotice.style.display = 'none';
+            cookieNotice.classList.add('hide');
         }
     </script>
     <div class="cookie-notice">
