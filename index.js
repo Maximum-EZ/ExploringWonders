@@ -1,7 +1,6 @@
 // Define routes
 const routes = [
   { path: "/", file: "index.html" },
-  { path: "/nutrition", file: "/articles/nutrition.html" },
   { path: "/ancient", file: "/articles/ancient.html" },
   { path: "/maldives", file: "/articles/maldives.html" },
   { path: "/grand-canyon", file: "/articles/grand-canyon.html" },
