@@ -90,11 +90,6 @@ footer {
   border-radius: 5px;
 }
 
-<<<<<<< HEAD
-.go-back:hover {
-  background-color: #555;
-}
-=======
     .go-back:hover {
     background-color: #555;
  }
@@ -125,4 +120,3 @@ footer {
         .cookie-notice .cookie-notice-button:hover {
             background-color: #45a049;
         }
->>>>>>> de1924eef1679dec071809ef284556d8a54dd6c3
