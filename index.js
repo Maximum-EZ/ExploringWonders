@@ -9,6 +9,13 @@ const routes = [
   { path: "/iceland", file: "/articles/iceland.html" },
   { path: "/serengeti", file: "/articles/serengeti.html" },
   { path: "/angkor", file: "/articles/angkor.html" },
+  { path: "/angkor", file: "/articles/amalfi-coast.html" },
+  { path: "/angkor", file: "/articles/istanbul.html" },
+  { path: "/angkor", file: "/articles/great-barrier-reef.html" },
+  { path: "/angkor", file: "/articles/stonehenge.html" },
+  { path: "/angkor", file: "/articles/tea-ceremony.html" },
+  { path: "/angkor", file: "/articles/amazon-rainforest.html" },
+  { path: "/angkor", file: "/articles/italian.html" },
   { path: "/privacy", file: "/privacy.html" },
   { path: "/404", file: "404.html" },
 ];
