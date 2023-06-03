@@ -1,95 +1,95 @@
 /* Add your desired styles here */
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
 }
 
 h1 {
-    margin: 0;
+  margin: 0;
 }
 
 main {
-    padding: 20px;
-    flex: 1;
+  padding: 20px;
+  flex: 1;
 }
 
 .articles {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
 }
 
 article {
-    border: 1px solid #ddd;
-    padding: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
 }
 
 h2 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .meta {
-    color: #777;
+  color: #777;
 }
 
 .read-more {
-    display: inline-block;
-    margin-top: 10px;
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .read-more:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .policy {
-    display: inline-block;
-    margin-top: 10px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .policy:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
 .button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .go-back {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
- }
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
 
-    .go-back:hover {
-    background-color: #555;
- }
+.go-back:hover {
+  background-color: #555;
+}
