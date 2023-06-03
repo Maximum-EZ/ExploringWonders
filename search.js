@@ -23,35 +23,25 @@ searchForm.addEventListener('submit', function (event) {
 
 // Function to perform the search and display the results
 function performSearch(query) {
-  // Make an API call or perform server-side logic to retrieve the search results based on the query
-  // In this example, let's assume we have a server-side endpoint called '/search' that returns the search results as JSON
+  // Get the articles container
+  const articlesContainer = document.querySelector('.articles');
 
-  // Send a GET request to the '/search' endpoint with the query parameter
-  fetch(`/search?query=${encodeURIComponent(query)}`)
-    .then((response) => response.json())
-    .then((data) => {
-      // Process the search results and display them on the page
-      displaySearchResults(data);
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-    });
-}
+  // Get all the articles
+  const articles = articlesContainer.querySelectorAll('article');
 
-// Function to display the search results on the page
-function displaySearchResults(results) {
-  // Iterate over the search results and create HTML elements to display them
-  results.forEach((result) => {
-    const article = document.createElement('article');
-    const heading = document.createElement('h2');
-    const description = document.createElement('p');
+  // Filter the articles based on the search query
+  const filteredArticles = Array.from(articles).filter((article) => {
+    const title = article.querySelector('h2').textContent.toLowerCase();
+    const description = article.querySelector('p').textContent.toLowerCase();
+    return title.includes(query.toLowerCase()) || description.includes(query.toLowerCase());
+  });
 
-    heading.textContent = result.title;
-    description.textContent = result.description;
-
-    article.appendChild(heading);
-    article.appendChild(description);
-
-    searchResults.appendChild(article);
+  // Display the filtered articles as search results
+  filteredArticles.forEach((article) => {
+    // Clone the article element
+    const clonedArticle = article.cloneNode(true);
+    
+    // Append the cloned article to the search results container
+    searchResults.appendChild(clonedArticle);
   });
 }
