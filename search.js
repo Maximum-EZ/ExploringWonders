@@ -1,47 +1,26 @@
-// JavaScript code to handle search form submission
+// Get references to the search input and button
+const searchInput = document.getElementById('search-input');
+const searchButton = document.getElementById('search-button');
 
-// Get the form element
-const searchForm = document.querySelector('.search-form');
+// Add event listener to the search button
+searchButton.addEventListener('click', performSearch);
 
-// Get the search results container
-const searchResults = document.getElementById('search-results');
+// Perform the search operation
+function performSearch() {
+  const searchQuery = searchInput.value.toLowerCase(); // Get the search query and convert it to lowercase
+  const articles = document.getElementsByTagName('article'); // Get all the articles
 
-// Add an event listener to the form submission
-searchForm.addEventListener('submit', function (event) {
-  // Prevent the default form submission behavior
-  event.preventDefault();
+  // Loop through the articles and check if they match the search query
+  for (let i = 0; i < articles.length; i++) {
+    const article = articles[i];
+    const title = article.querySelector('h2').innerText.toLowerCase();
+    const content = article.querySelector('p').innerText.toLowerCase();
 
-  // Get the search query from the input field
-  const query = document.querySelector('.search-input').value;
-
-  // Clear previous search results
-  searchResults.innerHTML = '';
-
-  // Perform the search
-  performSearch(query);
-});
-
-// Function to perform the search and display the results
-function performSearch(query) {
-  // Get the articles container
-  const articlesContainer = document.querySelector('.articles');
-
-  // Get all the articles
-  const articles = articlesContainer.querySelectorAll('article');
-
-  // Filter the articles based on the search query
-  const filteredArticles = Array.from(articles).filter((article) => {
-    const title = article.querySelector('h2').textContent.toLowerCase();
-    const description = article.querySelector('p').textContent.toLowerCase();
-    return title.includes(query.toLowerCase()) || description.includes(query.toLowerCase());
-  });
-
-  // Display the filtered articles as search results
-  filteredArticles.forEach((article) => {
-    // Clone the article element
-    const clonedArticle = article.cloneNode(true);
-    
-    // Append the cloned article to the search results container
-    searchResults.appendChild(clonedArticle);
-  });
+    // Check if the title or content contains the search query
+    if (title.includes(searchQuery) || content.includes(searchQuery)) {
+      article.style.display = 'block'; // Show the article if it matches the search query
+    } else {
+      article.style.display = 'none'; // Hide the article if it doesn't match the search query
+    }
+  }
 }
