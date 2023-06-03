@@ -93,3 +93,30 @@ footer {
     .go-back:hover {
     background-color: #555;
  }
+
+ .cookie-notice {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f7f7f7;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .cookie-notice .cookie-notice-text {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .cookie-notice .cookie-notice-button {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .cookie-notice .cookie-notice-button:hover {
+            background-color: #45a049;
+        }
