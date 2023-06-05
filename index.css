@@ -17,6 +17,7 @@ header {
 
 h1 {
   margin: 0;
+  font-size: 24px; /* Increase font size for emphasis */
 }
 
 main {
@@ -33,14 +34,21 @@ main {
 article {
   border: 1px solid #ddd;
   padding: 20px;
+  transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+article:hover {
+  transform: translateY(-5px); /* Apply a subtle hover effect */
 }
 
 h2 {
   margin-top: 0;
+  font-size: 20px; /* Increase font size for emphasis */
 }
 
 .meta {
   color: #777;
+  font-size: 14px; /* Decrease font size for readability */
 }
 
 .read-more {
@@ -49,10 +57,12 @@ h2 {
   color: #333;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease; /* Add a smooth transition */
 }
 
 .read-more:hover {
   text-decoration: underline;
+  color: #555; /* Change color on hover */
 }
 
 .policy {
@@ -61,6 +71,7 @@ h2 {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease; /* Add a smooth transition */
 }
 
 .policy:hover {
@@ -88,6 +99,7 @@ footer {
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
+  transition: background-color 0.3s ease; /* Add a smooth transition */
 }
 
 .go-back:hover {
@@ -103,11 +115,14 @@ footer {
   padding: 10px;
   text-align: center;
   font-size: 14px;
+  transition: opacity 0.3s ease; /* Add a smooth transition */
 }
+
 .cookie-notice .cookie-notice-text {
   display: inline-block;
   margin-right: 10px;
 }
+
 .cookie-notice .cookie-notice-button {
   display: inline-block;
   padding: 5px 10px;
@@ -116,7 +131,70 @@ footer {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition */
 }
+
 .cookie-notice .cookie-notice-button:hover {
   background-color: #45a049;
+}
+
+/* Additional styles for engagement */
+
+body {
+  background-color: #f7f7f7; /* Change the background color for a more appealing look */
+}
+
+header {
+  display: flex;
+ 
+
+ align-items: center;
+  justify-content: space-between; /* Add space between header elements */
+}
+
+h1 {
+  font-size: 32px; /* Increase font size for impact */
+  letter-spacing: 2px; /* Add letter spacing for readability */
+}
+
+.articles {
+  margin-top: 20px; /* Add space between header and articles */
+}
+
+article {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+}
+
+.read-more,
+.policy {
+  transition: color 0.3s ease, opacity 0.3s ease; /* Add a smooth transition for both color and opacity */
+}
+
+.read-more:hover,
+.policy:hover {
+  color: #45a049; /* Change color on hover */
+}
+
+.go-back {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add a smooth transition for both background color and color */
+}
+
+.go-back:hover {
+  background-color: #777; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+.footer-text {
+  margin-bottom: 10px; /* Add space between footer text and button container */
+}
+
+.cookie-notice {
+  opacity: 0.9; /* Reduce opacity for a semi-transparent effect */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Add a smooth transition for both opacity and transform */
+}
+
+.cookie-notice:hover {
+  opacity: 1; /* Increase opacity on hover */
+  transform: translateY(-2px); /* Apply a subtle hover effect */
 }
