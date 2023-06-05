@@ -19,7 +19,7 @@ h1 {
   margin: 0;
   font-size: 24px; /* Increase font size for emphasis */
   transition: color 0.3s ease;
-  cursor:default;
+  cursor: default;
   user-select: none;
 }
 

@@ -16,7 +16,8 @@ header {
 
 h1 {
   margin: 0;
-  font-size: 24px; /* Increase font size for emphasis */
+  font-size: 32px;
+  letter-spacing: 2px;
   transition: color 0.3s ease;
   cursor: default;
   user-select: none;
