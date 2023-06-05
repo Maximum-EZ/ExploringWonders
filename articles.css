@@ -32,6 +32,13 @@ main {
   flex: 1;
 }
 
+header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between; /* Add space between header elements */
+}
+
 article {
   margin: 0 auto;
   max-width: 800px;
