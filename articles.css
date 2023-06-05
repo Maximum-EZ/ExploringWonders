@@ -26,6 +26,11 @@ h1:hover {
   color: #45a049;
 }
 
+h1 {
+  font-size: 32px; /* Increase font size for impact */
+  letter-spacing: 2px; /* Add letter spacing for readability */
+}
+
 main {
   padding: 20px;
   flex: 1;
