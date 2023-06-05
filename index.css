@@ -21,7 +21,7 @@ h1 {
   transition: color 0.3s ease;
 }
 
-ho:hover {
+h1:hover {
   color: #45a049;
 }
 
