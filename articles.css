@@ -31,6 +31,13 @@ h1 {
   letter-spacing: 2px; /* Add letter spacing for readability */
 }
 
+header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between; /* Add space between header elements */
+}
+
 main {
   padding: 20px;
   flex: 1;
