@@ -1,8 +1,6 @@
 // Check if the article should have a sidebar
 function shouldAddSidebarToArticle(article) {
-    // You can implement your own logic here to determine if the sidebar should be added to the given article
-    // For example, you could check if the article has a specific class or attribute
-    return article.querySelector('h3') !== null; // Add sidebar if the article has at least one <h3> heading
+    return article.querySelector('h3') !== null;
   }
   
   // Create and append the sidebar
@@ -13,7 +11,6 @@ function shouldAddSidebarToArticle(article) {
     var articles = document.querySelectorAll('article');
     articles.forEach(function (article) {
       if (shouldAddSidebarToArticle(article)) {
-        // Create a list of links to each <h3> heading in the article
         var sidebarList = document.createElement('ul');
         var headings = article.querySelectorAll('h3');
         headings.forEach(function (heading) {
@@ -25,11 +22,10 @@ function shouldAddSidebarToArticle(article) {
           sidebarList.appendChild(listItem);
         });
   
-        // Append the sidebar list to the sidebar container
-        sidebar.appendChild(sidebarList);
-  
-        // Append the sidebar to the article
-        article.insertBefore(sidebar.cloneNode(true), article.firstChild);
+        // Find the first h2 element in the article
+        var h2Element = article.querySelector('h2');
+        // Insert the sidebar after the h2 element
+        h2Element.insertAdjacentElement('afterend', sidebarList);
       }
     });
   }
