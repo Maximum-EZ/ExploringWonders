@@ -16,8 +16,8 @@ header {
 
 h1 {
   margin: 0;
-  font-size: 32px; 
-  letter-spacing: 2px; 
+  font-size: 32px;
+  letter-spacing: 2px;
   transition: color 0.3s ease;
   cursor: pointer;
   user-select: none;
@@ -75,6 +75,7 @@ h3 {
   background-color: #333;
   color: #fff;
   text-decoration: none;
+  user-select: none;
   font-weight: bold;
   border-radius: 5px;
   transition: background-color 0.3s ease, color 0.3s ease;
