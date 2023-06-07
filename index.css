@@ -63,6 +63,7 @@ h2 {
   margin-top: 10px;
   color: #333;
   text-decoration: none;
+  cursor: pointer;
   user-select: none;
   font-weight: bold;
   transition: color 0.3s ease; /* Add a smooth transition */
@@ -78,6 +79,8 @@ h2 {
   margin-top: 10px;
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
+  user-select: none;
   font-weight: bold;
   transition: color 0.3s ease; /* Add a smooth transition */
 }
