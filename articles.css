@@ -76,7 +76,6 @@ h3 {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
-  user-select: none;
   font-weight: bold;
   border-radius: 5px;
   transition: background-color 0.3s ease, color 0.3s ease;
