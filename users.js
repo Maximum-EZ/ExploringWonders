@@ -8,5 +8,5 @@ function getActiveUserCount() {
   }
   
   // Fetch the active user count every 5 seconds (adjust the interval as needed)
-  setInterval(getActiveUserCount, 5000);
+  setInterval(getActiveUserCount, 0000);
   
