@@ -1,15 +1,15 @@
 <?php
-$counter_file = 'counter.txt';
+session_start();
 
-// Read the current count from the file
-$counter = file_get_contents($counter_file);
+// Check if the visitor count session variable exists
+if (!isset($_SESSION['visitor_count'])) {
+    // If it doesn't exist, initialize it to 0
+    $_SESSION['visitor_count'] = 0;
+}
 
-// Increment the count
-$counter++;
-
-// Update the count in the file
-file_put_contents($counter_file, $counter);
+// Increment the visitor count
+$_SESSION['visitor_count']++;
 
 // Display the count
-echo "Visitor Count: $counter";
+echo "Visitor Count: " . $_SESSION['visitor_count'];
 ?>
