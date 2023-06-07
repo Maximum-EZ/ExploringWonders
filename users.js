@@ -1,5 +1,5 @@
 function getActiveUserCount() {
-    fetch('/path/to/server-side/code.php')
+    fetch('/users.php')
       .then(response => response.text())
       .then(count => {
         // Update the active user count on the webpage
