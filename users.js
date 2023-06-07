@@ -1,12 +1,17 @@
-function getActiveUserCount() {
-    fetch('/users.php')
-      .then(response => response.text())
-      .then(count => {
-        // Update the active user count on the webpage
-        document.getElementById('active-users-count').textContent = count;
-      });
+function testActiveUserCount() {
+    setInterval(() => {
+      // Send a request to the server to fetch the active user count
+      fetch('/users.php')
+        .then(response => response.text())
+        .then(count => {
+          console.log('Active User Count:', count);
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    }, 5000); // Adjust the interval as needed (here, it fetches every 5 seconds)
   }
   
-  // Fetch the active user count every 5 seconds (adjust the interval as needed)
-  setInterval(getActiveUserCount, 0000);
+  // Start testing the active user count
+  testActiveUserCount();
   
