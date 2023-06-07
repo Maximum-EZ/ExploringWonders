@@ -16,9 +16,11 @@ header {
 
 h1 {
   margin: 0;
-  font-size: 32px;
-  letter-spacing: 2px;
+  font-size: 32px; 
+  letter-spacing: 2px; 
   transition: color 0.3s ease;
+  cursor: pointer;
+  user-select: none;
 }
 
 h1:hover {
