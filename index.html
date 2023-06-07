@@ -306,9 +306,31 @@
     </main>
     <footer>
       <p>&copy; 2023 Exploring Wonders. All rights reserved.</p>
-      <p>
-        <?php include 'visitor_counter.php'; ?>
-      </p>
+      <p id="visitor-count">Visitor Count: Loading...</p>
+
+      <script>
+        // Function to update the visitor count
+        function updateVisitorCount(count) {
+          document.getElementById("visitor-count").textContent =
+            "Visitor Count: " + count;
+        }
+
+        // Function to fetch the visitor count from an API or external service
+        function fetchVisitorCount() {
+          // Replace 'API_ENDPOINT' with the actual endpoint URL that provides the visitor count
+          fetch("API_ENDPOINT")
+            .then((response) => response.text())
+            .then((count) => {
+              updateVisitorCount(count);
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+            });
+        }
+
+        // Call the function to fetch and update the visitor count
+        fetchVisitorCount();
+      </script>
       <a href="/privacy.html" class="policy">Privacy Policy</a>
     </footer>
     <div class="cookie-notice">
