@@ -1,3 +1,5 @@
+/* Add your desired styles here */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,12 +7,12 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #333; 
-  color: #fff; 
+  background-color: #333; /* Set dark background color */
+  color: #fff; /* Set light text color */
 }
 
 header {
-  background-color: #333;
+  background-color: #444; /* Adjusted color for header */
   color: #fff;
   padding: 20px;
 }
@@ -21,7 +23,7 @@ h1 {
   transition: color 0.3s ease;
   cursor: default;
   user-select: none;
-  color: #fff;
+  color: #fff; /* Set light text color */
 }
 
 h1:hover {
@@ -43,8 +45,8 @@ article {
   border: 1px solid #ddd;
   padding: 20px;
   transition: transform 0.3s ease;
-  background-color: #333; 
-  color: #fff;
+  background-color: #333; /* Set dark background color */
+  color: #fff; /* Set light text color */
 }
 
 article:hover {
@@ -54,7 +56,7 @@ article:hover {
 h2 {
   margin-top: 0;
   font-size: 20px;
-  color: #fff; 
+  color: #fff; /* Set light text color */
 }
 
 .meta {
@@ -65,7 +67,7 @@ h2 {
 .read-more {
   display: inline-block;
   margin-top: 10px;
-  color: #fff; 
+  color: #fff; /* Set light text color */
   text-decoration: none;
   cursor: pointer;
   user-select: none;
@@ -75,13 +77,13 @@ h2 {
 
 .read-more:hover {
   text-decoration: underline;
-  color: #aaa; 
+  color: #aaa; /* Change color on hover */
 }
 
 .policy {
   display: inline-block;
   margin-top: 10px;
-  color: #fff; 
+  color: #fff; /* Set light text color */
   text-decoration: none;
   cursor: pointer;
   user-select: none;
@@ -94,7 +96,7 @@ h2 {
 }
 
 footer {
-  background-color: #333;
+  background-color: #444; /* Adjusted color for footer */
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -153,14 +155,15 @@ footer {
   background-color: #45a049;
 }
 
+/* Additional styles for dark mode */
 
 body {
-  background-color: #333;
-  color: #fff; 
+  background-color: #333; /* Set dark background color */
+  color: #fff; /* Set light text color */
 }
 
 header {
-  background-color: #333;
+  background-color: #444; /* Adjusted color for header */
   color: #fff;
   padding: 20px;
 }
