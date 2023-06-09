@@ -42,7 +42,7 @@ main {
 }
 
 article {
-  border: 1px solid #ddd;
+  /* Remove border property */
   padding: 20px;
   transition: transform 0.3s ease;
   background-color: #333; /* Set dark background color */
