@@ -16,7 +16,6 @@ p {
   margin-bottom: 10px;
 }
 
-/* Style the button */
 .back-button {
   display: inline-block;
   padding: 10px 20px;
@@ -28,7 +27,6 @@ p {
   cursor: pointer;
 }
 
-/* Hover effect for the button */
 .back-button:hover {
   background-color: #45a049;
 }
