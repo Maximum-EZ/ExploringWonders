@@ -45,7 +45,7 @@ article {
   /* Remove border property */
   padding: 20px;
   transition: transform 0.3s ease;
-  background-color: #333; /* Set dark background color */
+  background-color: #444; /* Set article background color */
   color: #fff; /* Set light text color */
   border-radius: 8px; /* Add border radius to round the edges */
 }
