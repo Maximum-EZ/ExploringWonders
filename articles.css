@@ -5,12 +5,12 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #333; 
+  background-color: #333;
   color: #fff;
 }
 
 header {
-  background-color: #444; 
+  background-color: #444;
   color: #fff;
   padding: 20px;
 }
@@ -22,7 +22,7 @@ h1 {
   transition: color 0.3s ease;
   cursor: pointer;
   user-select: none;
-  color: #fff; 
+  color: #fff;
 }
 
 h1:hover {
@@ -51,20 +51,20 @@ article {
 
 h2 {
   font-size: 28px;
-  color: #fff; 
+  color: #fff;
 }
 
 .meta {
   color: #777;
   font-size: 14px;
   margin-bottom: 20px;
-  color: #fff; 
+  color: #fff;
 }
 
 h3 {
   font-size: 20px;
   margin-bottom: 10px;
-  color: #fff; 
+  color: #fff;
 }
 
 .button-container {
@@ -91,7 +91,7 @@ h3 {
 }
 
 footer {
-  background-color: #444; 
+  background-color: #444;
   color: #fff;
   padding: 20px;
   text-align: center;
