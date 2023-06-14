@@ -2,7 +2,7 @@
 const routes = [
   { path: "/", file: "index.html" },
   { path: "/ancient", file: "/articles/ancient.html" },
-  { path: "/maldives", file: "/articles/maldives.html" },
+  { path: "/technology", file: "/articles/technology.html" },
   { path: "/grand-canyon", file: "/articles/grand-canyon.html" },
   { path: "/bali", file: "/articles/bali.html" },
   { path: "/petra", file: "/articles/petra.html" },
