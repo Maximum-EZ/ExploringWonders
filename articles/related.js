@@ -3,12 +3,12 @@ const articles = [
   {
     title: "Article 1",
     description: "Description of Article 1",
-    link: "/bali.html",
+    link: "articles/bali.html",
   },
   {
     title: "Article 2",
     description: "Description of Article 2",
-    link: "/article2.html",
+    link: "articles/petra.html",
   },
   {
     title: "Article 3",
