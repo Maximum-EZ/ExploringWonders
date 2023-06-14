@@ -31,8 +31,6 @@ h1:hover {
 main {
   padding: 20px;
   flex: 1;
-  margin-bottom: 80px; /* Adjust this value to create enough space for the footer */
-  overflow-y: auto; /* Add this line to enable scrolling within the main section */
 }
 
 .articles {
