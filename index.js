@@ -5,7 +5,6 @@ const port = 3000;
 
 const app = express();
 
-// Define routes
 const routes = [
   { path: "/", file: "index.html" },
   { path: "/ancient", file: "/articles/ancient.html" },
@@ -27,22 +26,18 @@ const routes = [
   { path: "/404", file: "404.html" },
 ];
 
-// Serve static files from the main folder
 app.use(express.static(__dirname));
 
-// Define routes using the routes array
 routes.forEach((route) => {
   app.get(route.path, (req, res) => {
     res.sendFile(path.join(__dirname, route.file));
   });
 });
 
-// Catch-all route
 app.get("/*", (req, res) => {
   res.redirect("/404");
 });
 
-// Start the server
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
