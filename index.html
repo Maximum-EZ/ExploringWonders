@@ -336,7 +336,6 @@
     </div>
     <script>
       function acceptCookies() {
-        // Set a cookie with an expiration of 30 days
         document.cookie =
           "cookieAccepted=true; expires=" +
           new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toUTCString();
@@ -348,7 +347,6 @@
         cookieNotice.style.display = "none";
       }
 
-      // Check if the cookie exists when the page loads
       function checkCookie() {
         var cookieAccepted = document.cookie.match(
           /^(.*;)?\s*cookieAccepted\s*=\s*[^;]+(.*)?$/
