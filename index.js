@@ -1,3 +1,10 @@
+const express = require('express');
+const path = require('path');
+
+const port = 3000;
+
+const app = express();
+
 // Define routes
 const routes = [
   { path: "/", file: "index.html" },
@@ -9,16 +16,19 @@ const routes = [
   { path: "/iceland", file: "/articles/iceland.html" },
   { path: "/serengeti", file: "/articles/serengeti.html" },
   { path: "/angkor", file: "/articles/angkor.html" },
-  { path: "/angkor", file: "/articles/amalfi-coast.html" },
-  { path: "/angkor", file: "/articles/istanbul.html" },
-  { path: "/angkor", file: "/articles/great-barrier-reef.html" },
-  { path: "/angkor", file: "/articles/stonehenge.html" },
-  { path: "/angkor", file: "/articles/tea-ceremony.html" },
-  { path: "/angkor", file: "/articles/amazon-rainforest.html" },
-  { path: "/angkor", file: "/articles/italian.html" },
+  { path: "/amalfi-coast", file: "/articles/amalfi-coast.html" },
+  { path: "/istanbul", file: "/articles/istanbul.html" },
+  { path: "/great-barrier-reef", file: "/articles/great-barrier-reef.html" },
+  { path: "/stonehenge", file: "/articles/stonehenge.html" },
+  { path: "/tea-ceremony", file: "/articles/tea-ceremony.html" },
+  { path: "/amazon-rainforest", file: "/articles/amazon-rainforest.html" },
+  { path: "/italian", file: "/articles/italian.html" },
   { path: "/privacy", file: "/privacy.html" },
   { path: "/404", file: "404.html" },
 ];
+
+// Serve static files from the main folder
+app.use(express.static(__dirname));
 
 // Define routes using the routes array
 routes.forEach((route) => {
@@ -30,4 +40,9 @@ routes.forEach((route) => {
 // Catch-all route
 app.get("/*", (req, res) => {
   res.redirect("/404");
+});
+
+// Start the server
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });
