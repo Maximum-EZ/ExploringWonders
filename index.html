@@ -91,12 +91,12 @@
         new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toUTCString();
       hideCookieNotice();
     }
-
+  
     function hideCookieNotice() {
       var cookieNotice = document.querySelector(".cookie-notice");
       cookieNotice.style.display = "none";
     }
-
+  
     function checkCookie() {
       var cookieAccepted = document.cookie.match(
         /^(.*;)?\s*cookieAccepted\s*=\s*[^;]+(.*)?$/
@@ -105,24 +105,25 @@
         hideCookieNotice();
       }
     }
-
+  
     checkCookie();
-
+  
     document.getElementById("search-form").addEventListener("submit", function (event) {
       event.preventDefault(); // Prevent the form from submitting
-
+  
       var searchInput = document.getElementById("search-input").value.toLowerCase();
       var articles = document.querySelectorAll(".articles article");
-
+  
       articles.forEach(function (article) {
-        var articleText = article.textContent.toLowerCase();
-        if (articleText.includes(searchInput)) {
+        var articleTitle = article.querySelector("h2").textContent.toLowerCase();
+        var articleContent = article.querySelector("p").textContent.toLowerCase();
+        if (articleTitle.includes(searchInput) || articleContent.includes(searchInput)) {
           article.style.display = "block"; // Show the matching article
         } else {
           article.style.display = "none"; // Hide non-matching articles
         }
       });
     });
-  </script>
+  </script>  
 </body>
 </html>
