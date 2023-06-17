@@ -46,6 +46,11 @@ h1:hover {
   outline: none;
 }
 
+#search-form {
+  display: flex;
+  align-items: center;
+}
+
 #search-button {
   margin-left: 10px;
   padding: 8px 16px;
