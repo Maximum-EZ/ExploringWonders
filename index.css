@@ -201,6 +201,15 @@ article {
   color: #45a049;
 }
 
+.go-back {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.go-back:hover {
+  background-color: #777;
+  color: #fff;
+}
+
 .footer-text {
   margin-bottom: 10px;
 }
