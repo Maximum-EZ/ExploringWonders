@@ -90,6 +90,17 @@ h3 {
   background-color: #45a049;
 }
 
+article a {
+  color: #45a049;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+article a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
 footer {
   background-color: #444;
   color: #fff;
