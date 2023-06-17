@@ -2,13 +2,11 @@
 <html>
   <head>
     <title>
-      Exploring Wonders - Explore Gaming, Technology, and World's Coolest
-      Places
+      Exploring Wonders - Explore Gaming, Technology, and World's Coolest Places
     </title>
     <meta
       name="description"
-      content="Discover insightful articles about gaming, cutting-edge technology, and hidden travel gems around the world. Your one-stop source for diverse knowledge."
-    />
+      content="Discover insightful articles about gaming, cutting-edge technology, and hidden travel gems around the world. Your one-stop source for diverse knowledge." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <link rel="icon" href="/images/favicon.ico" type="ico" />
@@ -21,15 +19,13 @@
       "name": "Exploring Wonders",
       "url": "https://exploringwonders.pages.dev",
       "logo": "https://exploringwonders.pages.dev/images/favicon.ico",
-      "description":
-        "At Exploring Wonders, we cover a wide range of topics from gaming, technology, to world's coolest places. Dive in to expand your knowledge!"
+      "description": "At Exploring Wonders, we cover a wide range of topics from gaming, technology, to world's coolest places. Dive in to expand your knowledge!"
     }
   </script>
   <!-- Google Tag Start -->
   <script
     async
-    src="https://www.googletagmanager.com/gtag/js?id=G-2TYHPBYFCD"
-  ></script>
+    src="https://www.googletagmanager.com/gtag/js?id=G-2TYHPBYFCD"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -44,86 +40,99 @@
   <script
     async
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8732115884229930"
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous"></script>
   <!-- Google Adsense End -->
-</head>
-
-<body>
-  <header>
-    <h1>Exploring Wonders</h1>
-    <div class="search-bar">
-      <form id="search-form">
-        <input type="text" id="search-input" placeholder="Search articles..." />
-        <button type="submit">Search</button>
-      </form>
+  <body>
+    <header>
+      <h1>Exploring Wonders</h1>
+      <div class="search-bar">
+        <form id="search-form">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search articles..." />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <div class="articles">
+        <article>
+          <h2>[Featured] About Me</h2>
+          <p class="meta">Posted by Liam (Owner) on June 17, 2023</p>
+          <p>
+            Hello, My name is Liam and I love to code. I have been working on
+            this website for a long time and hope you enjoy it. Please support
+            my GitHub as it inspires me to do more thin...
+          </p>
+          <a href="/articles/about.html" class="read-more">Read More</a>
+        </article>
+        <!-- Add more articles here -->
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 Exploring Wonders. All rights reserved.</p>
+      <a href="/privacy.html" class="policy">Privacy Policy</a>
+    </footer>
+    <div class="cookie-notice">
+      <span class="cookie-notice-text"
+        >This website uses cookies to ensure you get the best experience.</span
+      >
+      <button class="cookie-notice-button" onclick="acceptCookies()">
+        Accept
+      </button>
     </div>
-  </header>
-  <main>
-    <div class="articles">
-      <article>
-        <h2>[Featured] About Me</h2>
-        <p class="meta">Posted by Liam (Owner) on June 17, 2023</p>
-        <p>
-          Hello, My name is Liam and I love to code. I have been working on
-          this website for a long time and hope you enjoy it. Please support
-          my GitHub as it inspires me to do more thin...
-        </p>
-        <a href="/articles/about.html" class="read-more">Read More</a>
-      </article>
-      <!-- Add more articles here -->
-    </div>
-  </main>
-  <footer>
-    <p>&copy; 2023 Exploring Wonders. All rights reserved.</p>
-    <a href="/privacy.html" class="policy">Privacy Policy</a>
-  </footer>
-  <div class="cookie-notice">
-    <span class="cookie-notice-text"
-      >This website uses cookies to ensure you get the best experience.</span
-    >
-    <button class="cookie-notice-button" onclick="acceptCookies()">Accept</button>
-  </div>
-  <script>
-    function acceptCookies() {
-      document.cookie =
-        "cookieAccepted=true; expires=" +
-        new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toUTCString();
-      hideCookieNotice();
-    }
-  
-    function hideCookieNotice() {
-      var cookieNotice = document.querySelector(".cookie-notice");
-      cookieNotice.style.display = "none";
-    }
-  
-    function checkCookie() {
-      var cookieAccepted = document.cookie.match(
-        /^(.*;)?\s*cookieAccepted\s*=\s*[^;]+(.*)?$/
-      );
-      if (cookieAccepted) {
+    <script>
+      function acceptCookies() {
+        document.cookie =
+          "cookieAccepted=true; expires=" +
+          new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toUTCString();
         hideCookieNotice();
       }
-    }
-  
-    checkCookie();
-  
-    document.getElementById("search-form").addEventListener("submit", function (event) {
-      event.preventDefault(); // Prevent the form from submitting
-  
-      var searchInput = document.getElementById("search-input").value.toLowerCase();
-      var articles = document.querySelectorAll(".articles article");
-  
-      articles.forEach(function (article) {
-        var articleTitle = article.querySelector("h2").textContent.toLowerCase();
-        var articleContent = article.querySelector("p").textContent.toLowerCase();
-        if (articleTitle.includes(searchInput) || articleContent.includes(searchInput)) {
-          article.style.display = "block"; // Show the matching article
-        } else {
-          article.style.display = "none"; // Hide non-matching articles
+
+      function hideCookieNotice() {
+        var cookieNotice = document.querySelector(".cookie-notice");
+        cookieNotice.style.display = "none";
+      }
+
+      function checkCookie() {
+        var cookieAccepted = document.cookie.match(
+          /^(.*;)?\s*cookieAccepted\s*=\s*[^;]+(.*)?$/
+        );
+        if (cookieAccepted) {
+          hideCookieNotice();
         }
-      });
-    });
-  </script>  
-</body>
+      }
+
+      checkCookie();
+
+      document
+        .getElementById("search-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); 
+
+          var searchInput = document
+            .getElementById("search-input")
+            .value.toLowerCase();
+          var articles = document.querySelectorAll(".articles article");
+
+          articles.forEach(function (article) {
+            var articleTitle = article
+              .querySelector("h2")
+              .textContent.toLowerCase();
+            var articleContent = article
+              .querySelector("p")
+              .textContent.toLowerCase();
+            if (
+              articleTitle.includes(searchInput) ||
+              articleContent.includes(searchInput)
+            ) {
+              article.style.display = "block";
+            } else {
+              article.style.display = "none"; 
+            }
+          });
+        });
+    </script>
+  </body>
 </html>

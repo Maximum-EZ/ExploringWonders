@@ -28,6 +28,39 @@ h1:hover {
   color: #45a049;
 }
 
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#search-input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+}
+
+#search-input:focus {
+  outline: none;
+}
+
+#search-button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #45a049;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+  background-color: #3c8940;
+}
+
 main {
   padding: 20px;
   flex: 1;
@@ -100,27 +133,6 @@ footer {
   text-align: center;
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.go-back {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.go-back:hover {
-  background-color: #555;
-}
-
 .cookie-notice {
   position: fixed;
   bottom: 0;
@@ -187,15 +199,6 @@ article {
 .read-more:hover,
 .policy:hover {
   color: #45a049;
-}
-
-.go-back {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.go-back:hover {
-  background-color: #777;
-  color: #fff;
 }
 
 .footer-text {
