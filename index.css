@@ -220,7 +220,7 @@ article {
 
 .search-bar {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 40px; /* Adjusted margin-bottom value */
 }
 
 #search-input {
